@@ -1,8 +1,9 @@
 \documentclass{article}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=1in]{geometry}
+\usepackage{indentfirst}
 
 \title{Written Interview for Python Engineer - Data Center Hardware Integration (Greater Boston Area)}
-\author{Derek Rodriguez (derek@derekrodriguez.dev)}
+\author{Name Redacted}
 \date{\today}
 
 \begin{document}
@@ -10,89 +11,244 @@
 
 \section{Career Development}
 \subsection{How would you describe your level of experience managing data servers and network hardware?}
-% intermediate, have done most tasks at least once, but would still benefit from the guidance of a manager or senior lead on large projects
-\subsection{How would you describe your level of experience as a software engineer?}
-% near-senior. I have worked on many different layers of abstraction across multiple different projects. There is still much for me to learn, but what I don't know I feel capable of teaching myself very quickly.
-\subsection{What is your proudest success as an engineer?}
-% Either the Discord bot or when I found corruption bugs in prod
-\subsection{Outline the role of an engineering manager in shaping a high functioning team.}
-% Goes to bat for engineers who report to them to higher ups for needs
-% Setting priorities based on OKRs
-% Can step in as a fellw engineer to assist when necessary: setting requirement scope
-% Helps with hirng and firing
 
-\section{Experience}
-\subsection{Describe your level of experience in Python, and how you have attained it.}
+I have an intermediate level of experience managing data servers and network
+hardware. I have performed most common tasks related to configuring and
+maintaining data servers and network hardware at least once. In the past, I was
+a Cisco Certified Entry Network Technician certification and am familiar with
+configuring hardware running Cisco IOS.
+
+In both my graduate and undergraduate research labs, I received training in
+configuring and installing rack-mounted Linux servers. This training was used
+for installing a handful of hardware, mostly GPU servers.  This involved
+everything from physical installations to account management to software
+installation.
+
+\subsection{How would you describe your level of experience as a software
+    engineer?}
+% near-senior. I have worked on many different layers of abstraction across
+% multiple different projects. There is still much for me to learn, but what I
+% don't know I feel capable of teaching myself very quickly.
+
+I believe that my experience has me on track to being a senior engineer in the
+next 12-18 months. My prior experiences as a researcher, machine learning
+engineer, and consultant have honed my abilities as a software engineer who had
+to ship code to production and could be easily maintained by other engineers. I
+am comfortable writing code in multiple languages, with my strongest being
+Python. Here is an abbreviated list of professional software projects I have worked
+on in the past:
+\begin{itemize}
+    \item Topic classification microservice for a microblog-based social media platform: Python
+    \item Optimized post-processing pipeline for real-time object detection in video: Python, C++17, CUDA
+    \item A cycle-approximate simulation of a RISC-V CPU down to the basic block level: Golang
+\end{itemize}
+
+
+\subsection{What is your proudest success as an engineer?}
+
+To this day, my produest success is the Discord bot which plays background music
+for my friends and while we hang out in voice chat. While it is not my most
+technically advanced creation, it is something I made which improves of the
+lives of people that are important to me. I often get requests for
+feature additions, or bug reports from my friends even when I'm not online,
+which tells me that they use it even when I'm not around.
+
+\subsection{Outline the role of an engineering manager in shaping a high
+    functioning team.}
+
+An engineering manager shapes a high functioning team in the following ways:
+\begin{itemize}
+    \item \textbf{Hiring and Firing}: The Engineering Manager is the most aware
+          of what skills would be needed to complement the existing team, and thus
+          they should have a large role and selecting new hires for their team.
+    \item \textbf{Managing Upwards}: The Engineering Manager should have the
+          most time to meet with leadership, as implementation work has been delegated
+          to the engineers that they manage. This time should be used to ensure that their
+          engineers have all the resources (e.g., time, information, infrastructure) they
+          need to do well, and that expectations are managed accordingly
+    \item \textbf{Mentorship}: The Engineering Manager should serve as a "force
+          multiplier" for the engineers they manage, by allocating work in such a way
+          that the engineers can grow technically and professionally.
+\end{itemize}
+
+\section{Experience} \subsection{Describe your level of experience in Python,
+    and how you have attained it.}
 % Wrote my first python in 2017, and I have been fond of the language eer since
-% I have traslated projects from C++ to Python
-% I have written decrypting software that cracked DES ciphers using NumPy
-% I have shipped multiple machine learning services written in Python
-\subsection{Describe a case where it was very difficult to test code you were writing, but you found a reliable way to do it.}
-% Real-time Object Detection software tests
-% 10 from training set -- must pass
+% I have traslated projects from C++ to Python I have written decrypting
+% software that cracked DES ciphers using NumPy I have shipped multiple machine
+% learning services written in Python
+\subsection{Describe a case where it was very difficult to test code you were
+    writing, but you found a reliable way to do it.}
+
+While working as a Machine Learning Engineer, it was common to encounter
+code which compiled and ran without software errors, but didn't perform as
+expected on certain edge cases. One of the first tasks I set about doing as a
+new hire was to develop a special test suite that would allow for us to measure
+whether changes to our image processing code affected the results of the object
+classification software (In terms of AUC ROC\cite{auc_roc}). This way, every
+time a change was made to the image processing code for the classifiers, we could
+observe any potentialy degredation in our image detection capabilities and prevent
+it from being deployed.
+
+% Real-time Object Detection software tests 10 from training set -- must pass
 % 100 unseen examples -- score must always improve
-\subsection{When did you start working with Linux? Describe your level of experience as a user \& developer on Linux.}
+\subsection{When did you start working with Linux? Describe your level of
+    experience as a user \& developer on Linux.}
 % I started using Linux on a daily basis for university assignments 8 years ago.
-\subsection{Describe your experience with networking, storage technologies and cloud infrastructure}
-% I once held a valid CCENT certification (although now it expired)
-% I acquired some professional experience with cloud infrastructure by nature of the small size of our engineering department
-\subsection{Describe your experience of large-scale physical server installations, including any provisioning, automation and service orchestration work.}
-% Most of my experience with servers is in the "must fit in a single rack", but I have physically installed servers onto racks, made my own CAT5e patch cables, and wired them all up to a switch
-% I have worked with Ansible for monitoring and logging fleets of production devices
-\subsection{Tell us what you believe teams should consider when they build, test, run and deliver software.}
-% build and release fast and as transparently as possible
-% tests can be binned based on necessity: essential, client-driven, and thorough
-% deploy to serve the scale you need
-% DEvelopment and Ops are two sides of the same coin
+
+I started using Linux on a regular basis 8 years ago for my computer science
+coursework and have been using it ever since. I've used a variety of Linux
+distros for software development, hosting, to media playback and gaming. I
+used a Linux distro to write this document. Ubuntu was the Linux distribution of
+choice for the computing department at both my undergraduate and graduate institutions.
+
+\subsection{Describe your experience with networking, storage technologies and
+    cloud infrastructure}
+
+I acquired some professional experience with cloud infrastructure by nature of the
+small engineering team at my previous employer. This involved the following:
+\begin{itemize}
+    \item Writing Dockerfiles which assembled a custom SDK for \texttt{x64} and \texttt{aarch64} architectures
+    \item Managing Artifacts in Google Cloud Platform Artifact Registry
+    \item Writing custom CI workflows for GitHub CI and Jenkins
+\end{itemize}
+
+\subsection{Describe your experience of large-scale physical server
+    installations, including any provisioning, automation and service orchestration
+    work.}
+% Most of my experience with servers is in the "must fit in a single rack", but
+% I have physically installed servers onto racks, made my own CAT5e patch
+% cables, and wired them all up to a switch I have worked with Ansible for
+% monitoring and logging fleets of production devices
+\subsection{Tell us what you believe teams should consider when they build,
+    test, run and deliver software.}
+% build and release fast and as transparently as possible tests can be binned
+% based on necessity: essential, client-driven, and thorough deploy to serve the
+% scale you need DEvelopment and Ops are two sides of the same coin
 \subsection{How do you think about quality?}
-% Quality is always relative: everything is a comparison, so it's important that 
-\subsection{What would you like to achieve in career development and skills development?}
-% I would like to evolve from a builder into a builder who leads
-% I would like to learn from expert leaders to co-develop great open source projects
-% I'd like to build strong connections with leaders in the open source community
+
+
+
+\subsection{What would you like to achieve in career development and skills
+    development?}
+% I would like to evolve from a builder into a builder who leads I would like to
+% learn from expert leaders to co-develop great open source projects I'd like to
+% build strong connections with leaders in the open source community
 
 \section{Education}
-\subsection{At high school, how did you fare in mathematics and physical sciences? Which were your strongest subjects in the hard sciences, and how did you rank in your class?}
-% mathlete + competitive science fair at the regional district 
-% Won first place at the south carolina regional science fair competition for my analysis of fairness in Bitcoin mining pools
-\subsection{At high school, what leadership roles did you take on?}
-% co-editor of the STEM magnet newspaper
-\subsection{What course and university did you choose, and why?}
-% Computer Science because I had a passion for understanding how technology worked and how to make it more accessible to the world
-% Clemson University because I had been awarded the Palmetto Fellows Scholarship
-\subsection{How did you rank competitively in university? Which were your strongest courses, and which did you enjoy the most?}
-% I was an A/B student
-% Strongest courses were very freeform: research, senior seminars, robotics
-\subsection{At high school and university, describe your achievements that were considered exceptional by colleagues and staff.}
-% Best research in the CS department
-% 
+\subsection{At high school, how did you fare in mathematics
+    and physical sciences? Which were your strongest subjects in the hard sciences,
+    and how did you rank in your class?}
 
+I was very strong in math and physical sciences in high school. I competed at the state level
+in both domains, and won first place at the South Carolina Junior Academy of Sciences competition
+in Math and Computer Science for my research on fairness in Bitcoin mining pools.
+
+% mathlete + competitive science fair at the regional district Won first place
+% at the south carolina regional science fair competition for my analysis of
+% fairness in Bitcoin mining pools
+\subsection{At high school, what leadership roles did you take on?}
+
+Here is a list of relevant leadership roles from my high school years:
+\begin{itemize}
+    \item I was the lead editor for all Math and CS content at my highschool's educational newsletter.
+    \item I tutored math and spanish for ~4hrs a week as a volunteer.
+    \item I represented my high school at the University of South Carolina Summer at Moore business competition.
+\end{itemize}
+\subsection{What course and university did you choose, and why?}
+% Computer Science because I had a passion for understanding how technology
+% worked and how to make it more accessible to the world Clemson University
+% because I had been awarded the Palmetto Fellows Scholarship
+
+I attended Clemson University and acquired a Bachelors of Science in Computer
+Science, because understanding how computers work has been my passion since a
+very young age. I was awarded the Palmetto Fellows Scholarship (along with other
+awards), and thus was given the opportunity to attend at very low cost, cementing
+my choice of university.
+
+\subsection{How did you rank competitively in university? Which were your
+    strongest courses, and which did you enjoy the most?}
+
+I was mostly an A/B student in my undergraduate studies, likely in the upper
+30\% of the class. Here is a sample of courses where I recieved the highest
+grade in my undergraduate:
+\begin{itemize}
+    \item Network Programming
+    \item Design and Analysis of Algorithms
+    \item Calculus of Several Variables
+\end{itemize}
+
+I really enjoyed courses that allowed me to take skills I had developed earlier on and build projects, here are some examples:
+\begin{itemize}
+    \item 2-D Game Engine Construction
+    \item Applied Data Science
+    \item Robotics
+\end{itemize}
+
+My academic showing during my Master of Science in Computer Engineering was much stronger, with a GPA of 3.8/4.0.
+
+% I was an A/B student Strongest courses were very freeform: research, senior
+% seminars, robotics
+\subsection{At high school and university, describe your achievements that were
+    considered exceptional by colleagues and staff.}
+
+\begin{itemize}
+    \item \textbf{Clemson School of Computing Best Research}  I built monitoring infrastructure for
+          memory accesses in Nvidia's Unified Virtual Memory system, and eventually
+          presented the research at Super Computing 2019.
+    \item \textbf{1$^{st}$ Place South Carolina Junior Academy of Sciences, Math
+              and Computing} I studied reward allocation behavior in Bitcoin mining pools
+          from 2013-2014 to determine if certain policies were more beneficial to
+          small, individual mining participants such as myself.
+    \item \textbf{LQTLD3} I wrote a map-parsing library for a robotics project
+          that allowed for the path-finding algorithm to determine available adjacent
+          space in constant time, and then made it open source. My implementation is based
+          a paper by Kunio Aizawa and Shojiro Tanaka\cite{4538229} and the repository is hosted
+          on GitHub\cite{lqtld3}.
+
+\end{itemize}
 \section{Context}
-\subsection{How are you involved in open source software?}
-% I have begun immersing myself 
-\subsection{Describe any significant contributions to open source (with links where possible)}
-% Akita
-\subsection{What do you think are the key ingredients of a successful open source project?}
-% Good stewardship: Guido van Rossum, Linus
+\subsection{How are you involved in open source software? Describe any
+    significant contributions to open source (with links where possible)}
+
+As a professional developer, I am a contributor to Akita\cite{akita}, which is an MIT-licensed CPU/GPU
+simulation framework for building and testing microarchitectures against different
+workloads. I became a contributor for Akita through my graduate research, where I used
+Akita to build a RISC-V emulator.
+
+As a user, I see it as my duty to file issues and work on improving the product
+when possible, however previous employers chose not allocate time towards
+merging our code upstream in cases where we did work with open source software.
+
+\subsection{What do you think are the key ingredients of a successful open
+    source project?}
+I
+
 \subsection{Why do you most want to work for Canonical?}
-% Mission driven
-% Work across various layers of the stack
-% Build a network with the open source community
-\subsection{Which other companies are building the sort of products you would like to work on?}
+
+% Mission driven Work across various layers of the stack Build a network with
+% the open source community
+\subsection{Which other companies are building the sort of products you would
+    like to work on?}
 Here's what I seek out in terms of projects:
 \begin{itemize}
     \item Technical Challenge to improve / maintain
     \item Provides utility to people
-    \item Generally, makes the world a better place
+    \item Generally related to a subject I'm experienced with (e.g., Software, Audio/Video, Machine Learning)
 \end{itemize}
-Here are some examples of companies that make products which meet those requirements:
+Here are some examples of companies that make products which meet those
+requirements:
 \begin{itemize}
     \item Apple (iOS, macOS, XCode, iMessage)
     \item Microsoft (Azure, GitHub, Visual Studio Code)
     \item HuggingFace (HuggingFace Hub)
-\end{itemize}
-\subsection{What do you think Canonical needs to improve in its engineering and products?}
-% Canonical needs to improve the pipeline for getting hobbyist devs and solopreneurs onto its enterprise offerings
-\subsection{Who do you think are key competitors to Canonical? How do you think Canonical should plan to win that race?}
+\end{itemize} \subsection{What do you think Canonical needs to improve in its
+    engineering and products?}
+% Canonical needs to improve the pipeline for getting hobbyist devs and
+% solopreneurs onto its enterprise offerings
+\subsection{Who do you think are key competitors to Canonical? How do you think
+    Canonical should plan to win that race?}
 % RedHat/IBM and Hetzner 
+\bibliographystyle{plain}
+\bibliography{refs}
 \end{document}
