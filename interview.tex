@@ -108,7 +108,8 @@ choice for the computing department at both my undergraduate and graduate instit
 I acquired some professional experience with cloud infrastructure by nature of the
 small engineering team at my previous employer. This involved the following:
 \begin{itemize}
-    \item Writing Dockerfiles which assembled a custom SDK for \texttt{x64} and \texttt{aarch64} architectures
+    \item Writing Dockerfiles which assembled a custom SDK for \texttt{x64} and
+          \texttt{aarch64} architectures
     \item Managing Artifacts in Google Cloud Platform Artifact Registry
     \item Writing custom CI workflows for GitHub CI and Jenkins
 \end{itemize}
@@ -127,6 +128,10 @@ small engineering team at my previous employer. This involved the following:
 % scale you need DEvelopment and Ops are two sides of the same coin
 \subsection{How do you think about quality?}
 
+Quality is what the you remember after using a product or service. It's what
+provides the sensation of "wow, this really just works" when using a piece of
+software. Humans are naturally highly perceptive creatures, and thus high
+quality products and services require lots of attention to the finest details.
 
 
 \subsection{What would you like to achieve in career development and skills
@@ -141,8 +146,7 @@ small engineering team at my previous employer. This involved the following:
     and how did you rank in your class?}
 
 I was very strong in math and physical sciences in high school. I competed at the state level
-in both domains, and won first place at the South Carolina Junior Academy of Sciences competition
-in Math and Computer Science for my research on fairness in Bitcoin mining pools.
+in both domains, and was ranked 18\textsuperscript{th} out of a class of 496 (Top 5\%).
 
 % mathlete + competitive science fair at the regional district Won first place
 % at the south carolina regional science fair competition for my analysis of
@@ -151,8 +155,8 @@ in Math and Computer Science for my research on fairness in Bitcoin mining pools
 
 Here is a list of relevant leadership roles from my high school years:
 \begin{itemize}
-    \item I was the lead editor for all Math and CS content at my highschool's educational newsletter.
-    \item I tutored math and spanish for ~4hrs a week as a volunteer.
+    \item I was the lead editor for all Math and computing content at my highschool's educational newsletter.
+    \item I tutored math and Spanish for 4 hours a week as a volunteer.
     \item I represented my high school at the University of South Carolina Summer at Moore business competition.
 \end{itemize}
 \subsection{What course and university did you choose, and why?}
@@ -196,7 +200,7 @@ My academic showing during my Master of Science in Computer Engineering was much
     \item \textbf{Clemson School of Computing Best Research}  I built monitoring infrastructure for
           memory accesses in Nvidia's Unified Virtual Memory system, and eventually
           presented the research at Super Computing 2019.
-    \item \textbf{1$^{st}$ Place South Carolina Junior Academy of Sciences, Math
+    \item \textbf{1\textsuperscript{st} Place South Carolina Junior Academy of Sciences, Math
               and Computing} I studied reward allocation behavior in Bitcoin mining pools
           from 2013-2014 to determine if certain policies were more beneficial to
           small, individual mining participants such as myself.
@@ -211,10 +215,10 @@ My academic showing during my Master of Science in Computer Engineering was much
 \subsection{How are you involved in open source software? Describe any
     significant contributions to open source (with links where possible)}
 
-As a professional developer, I am a contributor to Akita\cite{akita}, which is an MIT-licensed CPU/GPU
-simulation framework for building and testing microarchitectures against different
-workloads. I became a contributor for Akita through my graduate research, where I used
-Akita to build a RISC-V emulator.
+As a professional developer, I am a contributor to Akita\cite{akita}, which is
+an MIT-licensed CPU/GPU simulation framework for building and testing
+microarchitectures against different workloads. I became a contributor for Akita
+through my graduate research, where I used Akita to build a RISC-V emulator.
 
 As a user, I see it as my duty to file issues and work on improving the product
 when possible, however previous employers chose not allocate time towards
@@ -222,33 +226,60 @@ merging our code upstream in cases where we did work with open source software.
 
 \subsection{What do you think are the key ingredients of a successful open
     source project?}
-I
+
+\begin{itemize}
+    \item \textbf{Effective leadership}, who is capable of communicating
+          priorities based on a strong vision, and running the project well at it's
+          current stage.
+    \item \textbf{Passionate builders}, who are technically capable to convert priorities
+          into features. Often in the early stages, the leadership is also building.
+    \item \textbf{Transparency}. Open source software wins because it is
+          extensible and transparent. It is easiest to build on software when the
+          person building on top of the software has all of the control they need to
+          get the job done. There was a great essay on this recently by the Co-founder
+          of Lago\cite{oss_cheap}.
+\end{itemize}
 
 \subsection{Why do you most want to work for Canonical?}
 
 % Mission driven Work across various layers of the stack Build a network with
 % the open source community
+
+I firmly believe in Canonical's mission to make the frontier of technology an accessible
+resource to all. I originally applied to grad school so that I could help make advanced
+machine learning methods more accessible. Building infrastructure with Canonical is a
+solid step towards making my mission a reality.
+
 \subsection{Which other companies are building the sort of products you would
     like to work on?}
 Here's what I seek out in terms of projects:
 \begin{itemize}
     \item Technical Challenge to improve / maintain
     \item Provides utility to people
-    \item Generally related to a subject I'm experienced with (e.g., Software, Audio/Video, Machine Learning)
+    \item Generally related to a subject I'm experienced with (e.g., Hardware/Software, Audio/Video, Machine Learning)
 \end{itemize}
 Here are some examples of companies that make products which meet those
 requirements:
 \begin{itemize}
-    \item Apple (iOS, macOS, XCode, iMessage)
-    \item Microsoft (Azure, GitHub, Visual Studio Code)
+    \item Apple (WebKit, Clang/LLVM)
+    \item Microsoft (GitHub, Visual Studio Code)
     \item HuggingFace (HuggingFace Hub)
 \end{itemize} \subsection{What do you think Canonical needs to improve in its
     engineering and products?}
-% Canonical needs to improve the pipeline for getting hobbyist devs and
-% solopreneurs onto its enterprise offerings
+
+I think Canonical would benefit from
+
 \subsection{Who do you think are key competitors to Canonical? How do you think
     Canonical should plan to win that race?}
-% RedHat/IBM and Hetzner 
+
+The key competitors to Canonical are RedHat/IBM, SUSE, and to a lesser extent,
+HashiCorp. These companies compete with Canonical by providing software which
+attempts to simplify and streamline managing enterprise software +
+infrastructure. I think beating out this portion of the competition comes down
+to providing a superior UX on the handful of workflows that matter the most to a
+target userbase.
+
+
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}
