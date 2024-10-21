@@ -1,0 +1,124 @@
+﻿Context
+=======
+
+
+How are you involved in open source software? Describe any significant contributions to open source (with links where possible)
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+As a professional developer, I am a contributor to Akita[@akita], which
+is an MIT-licensed CPU/GPU simulation framework for building and testing
+microarchitectures against different workloads. I became a contributor
+for Akita through my graduate research, where I used Akita to build a
+RISC-V emulator.
+
+
+As a user, I see it as my duty to file issues and work on improving the
+product when possible, however previous employers choose not to allocate
+time towards merging our code upstream in cases where we did work with
+open source software.
+
+
+What do you think are the key ingredients of a successful open source project?
+------------------------------------------------------------------------------
+
+
+-   **Effective leadership**, who is capable of communicating priorities
+        based on a strong vision, and running the project well at it's
+        current stage. Effective leadership for open source manifests itself in the form of open governance and a diverse base of contributors.
+
+
+-   **Passionate builders**, who are technically capable to convert
+        priorities into features. Often in the early stages, the leadership
+        is also building. Passionate builders are going to be capable and willing to put in the extra time to create a high quality project.
+
+
+-   **Transparency**. Open source software wins because it is extensible
+        and transparent. It is easiest to build on software when the person
+        building on top of the software has all of the control they need to
+        get the job done. There was a great essay on this recently by the
+        Co-founder of Lago[@oss_cheap].
+
+
+Why do you most want to work for Canonical?
+-------------------------------------------
+
+
+I firmly believe in Canonical's mission to make cloud infrastructure open and accessible. I originally applied to graduate school so that I could help make advanced machine learning methods more accessible. Building infrastructure with Canonical is a solid step
+towards making my mission a reality.
+
+
+Which other companies are building the sort of products you would like to work on?
+----------------------------------------------------------------------------------
+
+
+Here's what I seek out in terms of projects:
+
+
+-   Technical Challenge to build / improve
+
+
+-   Provides utility to people
+
+
+-   Generally related to a subject I'm experienced with (e.g.,
+        Hardware/Software, Audio/Video, Machine Learning)
+
+
+Here are some examples of companies that make products which meet those
+requirements:
+
+
+-   Apple (WebKit, Clang/LLVM)
+
+
+-   Microsoft (GitHub, Visual Studio Code)
+
+
+-   HuggingFace (HuggingFace Hub)
+
+
+What do you think Canonical needs to improve in its engineering and products?
+-----------------------------------------------------------------------------
+
+
+I think Canonical would benefit from a greater emphasis on \"turnkey\"
+workflows for certain classes of projects. I think an important test
+would be to create a non-trivial web service like the video streaming
+service described in this blog post[@streaming_blog] using Canonical's
+own managed service, and then see what it's like to build the same
+service using the offerings of the competition.
+
+
+My opinion comes from positive experiences I've had with
+software services in the past: Namely, Heroku's famous
+`git push heroku master` workflow, as well as the workflow for setting
+up static websites on GitHub Pages. These workflows stick out in my mind
+as being extremely accessible, much like my first experience installing
+Ubuntu long ago.
+
+
+Both of these examples cater to small developer shops and hobbyists who
+are price sensitive. If these markets aren't appealing to Canonical , then alternatively, Canonical could place a focus
+on consulting for the cybersecurity/privacy (SOC2 compliance, simplified
+IAM, HIPAA compliance) domain.
+
+
+Who do you think are key competitors to Canonical? How do you think Canonical should plan to win that race?
+-----------------------------------------------------------------------------------------------------------
+
+
+The key competitors to Canonical are RedHat/IBM, SUSE, and HashiCorp.
+These companies compete with Canonical by providing software which
+attempts to simplify and streamline managing enterprise software +
+infrastructure. I think beating out this portion of the competition
+comes down to providing a superior UX on the handful of workflows that
+matter the most to a target user base.
+
+
+
+
+[a]would give an example, this is pretty vague coupled with the "intermediate level of experience" line from the previous sentence
+[b]this wording is confusing
+[c]Agreed
+[d]when/where, describe the scenario a bit better

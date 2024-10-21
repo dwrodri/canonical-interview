@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{multicol}
 \usepackage{indentfirst}
 
 \title{Written Interview for Python Engineer - Data Center Hardware Integration (Greater Boston Area)}
@@ -13,72 +14,74 @@
 \subsection{How would you describe your level of experience managing data servers and network hardware?}
 
 I have an intermediate level of experience managing data servers and network
-hardware. I have performed most common tasks related to configuring and
-maintaining data servers and network hardware at least once. In the past, I was
-a Cisco Certified Entry Network Technician certification and am familiar with
-configuring hardware running Cisco IOS.
+hardware. I have performed most common tasks related[a] to configuring and
+maintaining data servers and network hardware at least once. In the past, I
+earned a Cisco Certified Entry Network Technician certification and am familiar
+with configuring hardware running Cisco IOS.
 
 In both my graduate and undergraduate research labs, I received training in
-configuring and installing rack-mounted Linux servers. This training was used
-for installing a handful of hardware, mostly GPU servers.  This involved
-everything from physical installations to account management to software
-installation.
+configuring and installing rack-mounted Linux servers. The training was very
+comprehensive, covering physical installations, account management, and software
+installation. I applied this skillset to install a handful of hardware, mostly
+GPU servers.
 
 \subsection{How would you describe your level of experience as a software
   engineer?}
-% near-senior. I have worked on many different layers of abstraction across
-% multiple different projects. There is still much for me to learn, but what I
-% don't know I feel capable of teaching myself very quickly.
 
-I believe that my experience has me on track to being a senior engineer in the
-next 12-18 months. My prior experiences as a researcher, machine learning
-engineer, and consultant have honed my abilities as a software engineer who had
-to ship code to production and could be easily maintained by other engineers. I
-am comfortable writing code in multiple languages, with my strongest being
-Python. Here is an abbreviated list of professional software projects I have worked
-on in the past:
+I currently have 3 years of experience building software as a machine learning
+engineer, researcher, and conultant. My prior experiences  have honed my ability
+to ship maintainable code to production. I am comfortable writing code in
+multiple languages, with my strongest being Python. Here is an abbreviated list
+of professional software projects I have worked on in the past:
+
 \begin{itemize}
   \item Topic classification microservice for a microblog-based social media platform: Python
   \item Optimized post-processing pipeline for real-time object detection in video: Python, C++17, CUDA
   \item A cycle-approximate simulation of a RISC-V CPU down to the basic block level: Golang
 \end{itemize}
 
-
 \subsection{What is your proudest success as an engineer?}
 
 To this day, my proudest success is the Discord bot which plays background music
 for my friends and while we hang out in voice chat. While it is not my most
 technically advanced creation, it is something I made which improves of the
-lives of people that are important to me. I often get requests for
-feature additions, or bug reports from my friends even when I'm not online,
-which tells me that they use it even when I'm not around.
+lives of people that are important to me. I often get requests for feature
+additions and bug reports from my friends even when I'm not online, which tells
+me that they use it even when I'm not around.
 
 \subsection{Outline the role of an engineering manager in shaping a high
   functioning team.}
 
 An engineering manager shapes a high functioning team in the following ways:
 \begin{itemize}
-  \item \textbf{Hiring and Firing}: The Engineering Manager is the most aware
-        of what skills would be needed to complement the existing team, and thus
-        they should have a large role and selecting new hires for their team.
-  \item \textbf{Managing Upwards}: The Engineering Manager should have the
-        most time to meet with leadership, as implementation work has been delegated
-        to the engineers that they manage. This time should be used to ensure that their
-        engineers have all the resources (e.g., time, information, infrastructure) they
-        need to do well, and that expectations are managed accordingly
+  \item \textbf{Hiring and Firing}: The Engineering Manager is the most aware of
+        what skills would be needed to complement the existing team, and
+        thus they should have a key role in selecting new hires for their
+        team.
+
+  \item \textbf{Managing Upwards}:The Engineering Manager should have the time
+        to meet with leadership. This time should be used to
+        ensure that their engineers have all the resources (e.g., time,
+        information, infrastructure) they need to do well, and that
+        expectations are managed accordingly.
+
   \item \textbf{Mentorship}: The Engineering Manager should serve as a "force
         multiplier" for the engineers they manage, by allocating work in such a way
         that the engineers can grow technically and professionally.
+
 \end{itemize}
 
 \section{Experience} \subsection{Describe your level of experience in Python,
   and how you have attained it.}
 
-The first time I used Python was to visualize some data about 7 years ago,
-and it has been my favorite language ever since. Today, I'd consider myself
-very experienced in Python. Here is a sample of work I've done:
+The first time I used Python to create data visualizations for a research paper about 7 years
+ago, and it has been my favorite language ever since. Today, I'd
+I consider myself very experienced in Python. Here is a sample of work
+I've done:
+
 \begin{itemize}
-  \item A Proof-of-Concept Flush+Reload attack on AES encryption
+  \item A Proof-of-Concept Flush+Reload attack on AES encryption, based on work
+        by Yaroum and Falkner~\cite{flushreload}.
   \item A monitoring service written in Python that uses FFmpeg to check the
         integrity of 30-second videos being uploaded to S3-compatible cloud service.
   \item A text classification service for short-form blog posts, that is
@@ -106,19 +109,19 @@ it from being deployed.
 % 100 unseen examples -- score must always improve
 \subsection{When did you start working with Linux? Describe your level of
   experience as a user \& developer on Linux.}
-% I started using Linux on a daily basis for university assignments 8 years ago.
 
-I started using Linux on a regular basis 8 years ago for my computer science
-coursework and have been using it ever since. I've used a variety of Linux
-distros for software development, hosting, to media playback and gaming. I
-used a Linux distro to write this document. Ubuntu was the Linux distribution of
-choice for the computing department at both my undergraduate and graduate institutions.
+I started using Linux on a regular basis 8 years ago for my computer
+science coursework and have been using it ever since. I've used a
+variety of Linux distros for software development, hosting, media playback, gaming, and more.
+Ubuntu was the Linux distribution of choice for the computing department
+at both my undergraduate and graduate institutions.
 
 \subsection{Describe your experience with networking, storage technologies and
   cloud infrastructure}
 
-I acquired some professional experience with cloud infrastructure by nature of the
-small engineering team at my previous employer. This involved the following:
+I acquired professional experience with cloud infrastructure by working on a
+small engineering team at my previous employer. My role as a machine learning engineer
+involved the following:
 \begin{itemize}
   \item Writing Dockerfiles which assembled a custom SDK for \texttt{x64} and
         \texttt{aarch64} architectures
@@ -129,21 +132,72 @@ small engineering team at my previous employer. This involved the following:
 \subsection{Describe your experience of large-scale physical server
   installations, including any provisioning, automation and service orchestration
   work.}
-% Most of my experience with servers is in the "must fit in a single rack", but
-% I have physically installed servers onto racks, made my own CAT5e patch
-% cables, and wired them all up to a switch I have worked with Ansible for
-% monitoring and logging fleets of production devices
+
+My experience dealing with physical server installations is at the scale of
+adding, removing, and troubleshooting connections on one or two racks of
+servers. Notably, I collaborated with a professor to install several Lambda Labs
+Hyperplane 4-A100 servers into the rack at our university lab, connect them to
+the network, and create all of the user profiles.
+
+When it comes to service orchestration, I configured Portainer to deploy and
+monitor our computer vision software on an array of several hundred x64 small
+form factor PCs. Portainer was connected to our cloud infrastructure, where we
+build container images for our software that Portainer could deploy to our
+hardware. We also configured log aggregation, downtime notifications, and
+enabled support for remote login when specific machines were malfunctioning.
+
 \subsection{Tell us what you believe teams should consider when they build,
   test, run and deliver software.}
 % build and release fast and as transparently as possible tests can be binned
 % based on necessity: essential, client-driven, and thorough deploy to serve the
 % scale you need DEvelopment and Ops are two sides of the same coin
+\begin{itemize}
+  \item Above all, adapt the process to the nature of the problem. The development cycle for a signal processing library on a 3-person team is different from infrastructure software at a 10,000-person company.
+  \item Collect and evaluate requirements and their respective priorities early and often. They are the most
+        useful guide for determining what needs to be built before delivery. They also determine how you build
+        your test suite.
+  \item Your first delivery should be when the subset requirements deemed critical are built and tested.
+  \item A great way to stay on schedule and stay with the mantra of ”ship early and ship often” is to always
+        build according to the scale of your users.
+  \item You shouldn’t build a feature without a test plan written down somewhere.
+  \item Every developer working on the product should have the means to build, test, and run their whole
+        product without involving another human in the process.
+\end{itemize}
+
+Here are some texts that I cite as the basis for my beliefs:
+
+\begin{itemize}
+  \item The Mythical Man-Month by Fred Brooks~\cite{mmm}
+  \item The Joel Test: 12 Steps to Better Code by Joel Spolsky\cite{spolsky_code}
+  \item Code Craft: The Practice of Writing Excellent Code by Pete Goodliffe\cite{codecraft}
+  \item Game Engine Architecture by Jason Gregory, specifically the Chapter 3 of Part I \cite{key}
+\end{itemize}
+
 \subsection{How do you think about quality?}
 
-Quality is what the you remember after using a product or service. It's what
+Quality is what you remember after using a product or service. It's what
 provides the sensation of "wow, this really just works" when using a piece of
-software. Humans are highly perceptive creatures, and thus high
-quality products and services require lots of attention to the finest details.
+software. Humans are highly perceptive creatures, and thus high quality products
+and services require lots of attention to the finest details.
+
+
+High quality software development follows a very similar pattern. The codebase
+is managed with a version control system. There should also be systems for
+automated building, testing, and delivery in place. If a new person joins the
+software development process, their ability to effectively contribute should be
+proportional to their related experience. The documentation for the software
+should comprehensively cover the problem(s) that the software intends to solve,
+and all of the details related to how the software solves them.
+
+
+My experience with high quality software development comes from my time working
+as a consultant building natural language processing software. I was building a
+service that was incorporated into a codebase that was already many hundreds of
+thousands of lines, but was easy to digest when broken into small parts. It was
+easy to delineate what information I needed to know to solve the problem at
+hand, thanks to the thorough documentation and great communication skills of the
+engineers I was assisting as a consultant. Once my code was written and the
+service was deployed, it ran very efficiently on the hardware provisioned.
 
 
 \subsection{What would you like to achieve in career development and skills
@@ -151,8 +205,10 @@ quality products and services require lots of attention to the finest details.
 
 \begin{itemize}
   \item Build a strong network in the open source community
-  \item Deliver excellent software that makes advanced technology more accessible to all
-  \item Build a platform as a talented engineer who can both build and communicate effectively for a global audience.
+  \item Deliver excellent software that makes advanced technology more
+        accessible to all
+  \item Build a platform as a talented engineer who can both build great
+        products and communicate effectively for a global audience.
 \end{itemize}
 
 \section{Education}
@@ -161,7 +217,19 @@ quality products and services require lots of attention to the finest details.
   and how did you rank in your class?}
 
 I was very strong in math and physical sciences in high school. I competed at the state level
-in both domains, and was ranked 18\textsuperscript{th} out of a class of 496 (Top 5\%).
+in both domains, and was ranked 18\textsuperscript{th} out of a class of 496 (Top 5\%). Here is
+a sample of courses where I attained the highest mark:
+\begin{multicols}{2}
+  \begin{itemize}
+    \item Advanced Placement Calculus BC
+    \item Advanced Placement Computer Science
+    \item Physics
+    \item Chemistry
+    \item Biology
+    \item Algebra
+    \item Geometry
+  \end{itemize}
+\end{multicols}
 
 % mathlete + competitive science fair at the regional district Won first place
 % at the south carolina regional science fair competition for my analysis of
@@ -174,10 +242,8 @@ Here is a list of relevant leadership roles from my high school years:
   \item I tutored math and Spanish for 4 hours a week as a volunteer.
   \item I represented my high school at the University of South Carolina Summer at Moore business competition.
 \end{itemize}
+
 \subsection{What course and university did you choose, and why?}
-% Computer Science because I had a passion for understanding how technology
-% worked and how to make it more accessible to the world Clemson University
-% because I had been awarded the Palmetto Fellows Scholarship
 
 I attended Clemson University and acquired a Bachelors of Science in Computer
 Science, because understanding how computers work has been my passion since a
@@ -188,16 +254,19 @@ my choice of university.
 \subsection{How did you rank competitively in university? Which were your
   strongest courses, and which did you enjoy the most?}
 
-I was mostly an A/B student in my undergraduate studies, likely in the upper
-30\% of the class. Here is a sample of courses where I recieved the highest
-grade in my undergraduate:
+I was an A/B student in my undergraduate studies, with a cumulative GPA of
+3.44/4.0. Here is a sample of courses where I recieved the highest grade in my
+undergraduate:
+
 \begin{itemize}
   \item Network Programming
   \item Design and Analysis of Algorithms
   \item Calculus of Several Variables
 \end{itemize}
 
-I really enjoyed courses that allowed me to take skills I had developed earlier on and build projects, here are some examples:
+I really enjoyed courses that allowed me to take skills I had developed earlier
+on and build projects, here are some examples:
+
 \begin{itemize}
   \item 2-D Game Engine Construction
   \item Applied Data Science
@@ -212,18 +281,21 @@ My academic showing during my Master of Science in Computer Engineering was much
   considered exceptional by colleagues and staff.}
 
 \begin{itemize}
-  \item \textbf{Clemson School of Computing Best Research}  I built monitoring infrastructure for
-        memory accesses in Nvidia's Unified Virtual Memory system, and eventually
-        presented the research at Super Computing 2019.
+  \item \textbf{Clemson School of Computing Best Research} I built monitoring
+        infrastructure to trace memory accesses in Nvidia's Unified Virtual
+        Memory system, and eventually presented the research at Super
+        Computing 2019.
+
   \item \textbf{1\textsuperscript{st} Place South Carolina Junior Academy of Sciences, Math
           and Computing} I studied reward allocation behavior in Bitcoin mining pools
         from to determine if certain policies were more beneficial to
         small, individual mining participants such as myself.
+
   \item \textbf{LQTLD3} I wrote a map-parsing library for a robotics project
         that allowed for the path-finding algorithm to determine available adjacent
-        space in constant time, and then made it open source. My implementation is based
-        a paper by Kunio Aizawa and Shojiro Tanaka\cite{4538229} and the repository is hosted
-        on GitHub.
+        space in constant time, and then made it open source. My implementation is
+        based on a paper by Kunio Aizawa and Shojiro\cite{4538229} and the repository
+        is hosted on GitHub.
 
 \end{itemize}
 \section{Context}
@@ -245,9 +317,15 @@ merging our code upstream in cases where we did work with open source software.
 \begin{itemize}
   \item \textbf{Effective leadership}, who is capable of communicating
         priorities based on a strong vision, and running the project well at it's
-        current stage.
-  \item \textbf{Passionate builders}, who are technically capable to convert priorities
-        into features. Often in the early stages, the leadership is also building.
+        current stage. Effective leadership for open source manifests itself in the
+        form of open governance and a diverse base of contributors.
+
+
+  \item \textbf{Passionate builders}, who are technically capable to convert
+        priorities into features. Often in the early stages, the leadership is also
+        building. Passionate builders are going to be capable and willing to put in
+        the extra time to create a high quality project.
+
   \item \textbf{Transparency}. Open source software wins because it is
         extensible and transparent. It is easiest to build on software when the
         person building on top of the software has all of the control they need to
@@ -257,13 +335,11 @@ merging our code upstream in cases where we did work with open source software.
 
 \subsection{Why do you most want to work for Canonical?}
 
-% Mission driven Work across various layers of the stack Build a network with
-% the open source community
 
-I firmly believe in Canonical's mission to make the frontier of technology an accessible
-resource to all. I originally applied to grad school so that I could help make advanced
-machine learning methods more accessible. Building infrastructure with Canonical is a
-solid step towards making my mission a reality.
+I firmly believe in Canonical's mission to make cloud infrastructure open and
+accessible. I originally applied to graduate school so that I could help make
+advanced machine learning methods more accessible. Building infrastructure with
+Canonical is a solid step towards making my mission a reality.
 
 \subsection{Which other companies are building the sort of products you would
   like to work on?}
@@ -282,24 +358,25 @@ requirements:
 \end{itemize} \subsection{What do you think Canonical needs to improve in its
   engineering and products?}
 
-I think Canonical would benefit from a greater emphasis on "turnkey" workflows
-for certain classes of projects. I think an important test would be to create a non-trivial
-web service like the video streaming service described in this blog
-post\cite{streaming_blog} using Canonical's own managed service, and then see
-what it's like to build the same service using the offerings of the competition.
+I think Canonical would benefit from a greater emphasis on "turnkey"
+workflows for certain classes of projects. I think an important test
+would be to create a non-trivial web service like the video streaming
+service described in this blog post\cite{streaming_blog} using Canonical's
+own managed service, and then see what it's like to build the same
+service using the offerings of the competition.
 
-Generally, this opinion comes from positive experiences I've had with software
-services in the past: Namely, Heroku's famous \texttt{git push heroku master}
-workflow, as well as the workflow for setting up static websites on GitHub Pages.
-This workflows stick out in my mind as being extremely accessible, much like my
-first experience installing Ubuntu long ago.
+My opinion comes from positive experiences I've had with
+software services in the past: Namely, Heroku's famous
+\texttt{git push heroku master} workflow, as well as the workflow for setting
+up static websites on GitHub Pages. These workflows stick out in my mind
+as being extremely accessible, much like my first experience installing
+Ubuntu long ago.
 
-Both of these examples cater to small developer shops and hobbyists who
-are price sensitive. If these markets aren't appealing to Canonical (for
-many valid reasons), then alternatively, Canonical could place a focus
-on consulting for the cybersecurity/privacy (SOC2 compliance, simplified IAM, HIPAA compliance)
+Both of these examples cater to small developer shops and hobbyists who are
+price sensitive. If these markets aren't appealing to Canonical , then
+alternatively, Canonical could place a focus on consulting for the
+cybersecurity/privacy (SOC2 compliance, simplified IAM, HIPAA compliance)
 domain.
-
 
 \subsection{Who do you think are key competitors to Canonical? How do you think
   Canonical should plan to win that race?}
